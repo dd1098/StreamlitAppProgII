@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 import streamlit as st
 
-s = pd.read_csv("C:/Users/19148/Downloads/social_media_usage.csv")
+s = pd.read_csv("social_media_usage.csv")
 
 def clean_sm(x):
     return(np.where(x == 1, 1, 0))
